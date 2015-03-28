@@ -184,7 +184,7 @@ void KeyBinding::performAction(string action) {
 	// scaling & AA
 	else if(action == "changeScaling") {
 		pres->changeScaling();
-	} if(isFunCall("setScaling", action)) {
+	} else if(isFunCall("setScaling", action)) {
 		pres->setScaling(decodeIntParam(action));
 	} else if(action == "changeAA") {
 		pres->changeAA();
